@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-let currDate= new Date(2022,3,21,6);
+let currDate= new Date(2022,3,21,22);
 currDate=currDate.getHours();
 let greetingText = "";
 const cssStyle={};
@@ -19,7 +19,9 @@ if (currDate>=1 && currDate< 12) {
 }
 ReactDOM.render(
   <React.Fragment>
+  <div>
   <h1>Hi, <span style={cssStyle}>{greetingText}</span></h1>
+  </div>
   </React.Fragment>,
   document.getElementById('root')
 );
